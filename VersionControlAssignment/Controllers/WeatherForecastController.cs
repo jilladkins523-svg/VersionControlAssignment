@@ -6,10 +6,12 @@ namespace VersionControlAssignment.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        //jill adkins
         [HttpGet]
-        public string Get()
+
+        public IActionResult Get()
         {
-            return "Jill Adkins";
+            return Ok(new { name = "Jill Adkins" });
         }
     }
 }
